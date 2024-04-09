@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.497346ff.js",
+    "static/js/453.25426bc6.chunk.js": "/static/js/453.25426bc6.chunk.js",
+    "static/media/zapatillas.jpg": "/static/media/zapatillas.7ffabc67959665ee8c88.jpg",
+    "static/media/remeras.png": "/static/media/remeras.c237c7e569fe79ff53ef.png",
+    "static/media/logo-puma.jpg": "/static/media/logo-puma.fa9f1da5d40d6321ec72.jpg",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.497346ff.js.map": "/static/js/main.497346ff.js.map",
+    "453.25426bc6.chunk.js.map": "/static/js/453.25426bc6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.497346ff.js"
+  ]
+}
