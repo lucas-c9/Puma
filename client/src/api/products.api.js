@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-    const BASE_URL = 'http://localhost:3001/';
+    const BASE_URL = 'https://puma-g1j4.onrender.com/';
     const access_token = localStorage.getItem('token')
 
     export const getAllProducts = (searchTerm) => {
