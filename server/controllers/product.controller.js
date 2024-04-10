@@ -2,9 +2,11 @@ const productRepository = require('../repository/product.repository');
 
 exports.getAllProducts = async (req, res) => {
     try {
+        console.log(req.query.name);
         const name = req.query.name;
         const products = await productRepository.getAllProducts(name);
         res.status(200).json(products);
+        console.log(products);
     } catch (error) {
         res.status(500).json({ error: 'Error imprevisto:' + error })
     }

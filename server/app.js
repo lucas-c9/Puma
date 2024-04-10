@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
 const port = 3001;
-const mongodb = "mongodb+srv://licalcarazaballay2022:AatqcrJyKGiwAKUg@puma.yhexui6.mongodb.net/"
+const mongodb = "mongodb+srv://licalcarazaballay2022:AatqcrJyKGiwAKUg@puma.yhexui6.mongodb.net/Puma?retryWrites=true&w=majority";
 var cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
