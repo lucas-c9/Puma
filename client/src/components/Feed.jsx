@@ -8,8 +8,8 @@ function Feed(props) {
     const { addToCart } = useCart();
 
     return (
-        <div style={style.feed} >
-            <Card sx={{ maxWidth: 345 }}>
+        <div style={style.feed}  >
+            <Card sx={{ maxWidth: 345, marginTop:'9%'}}>
                 <CardHeader
                     title={props.product.name} sx={{ color: 'black'}}
                 />

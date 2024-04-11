@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getAllProducts } from '../api/products.api';
+import CircularProgress from '@mui/material/CircularProgress';
 import ViewProduct from '../components/ViewProduct';
+import Box from '@mui/material/Box';
+
 
 function ViewProductPage() {
     const [product, setProduct] = useState(null); 
@@ -30,7 +33,10 @@ function ViewProductPage() {
 
     return (
         <div>
-            {product ? <ViewProduct product={product} /> : <p>Loading...</p>}
+            {product ? <ViewProduct product={product} /> : 
+            <Box sx={{ display: 'flex',  justifyContent: 'center', margin:'15%',  padding: '8px'}}>
+      <CircularProgress   color='error'/>
+    </Box>}
         </div>
     );
 }

@@ -69,12 +69,14 @@ const Cart = () => {
     }
 
     return (
-        <div>
-            <Badge badgeContent={cart.length} color="secondary">
+        <div >
+            <Badge badgeContent={cart.length} >
                 <IconButton color="inherit" aria-label="Shopping Cart" onClick={handleCartClick}>
                     <ShoppingCartIcon />
                 </IconButton>
             </Badge>
+
+
             <Popover
                 open={open}
                 anchorEl={anchorEl}
@@ -82,6 +84,7 @@ const Cart = () => {
                 anchorOrigin={{
                     vertical: 'bottom',
                     horizontal: 'right',
+    
                 }}
                 transformOrigin={{
                     vertical: 'top',
@@ -111,11 +114,11 @@ const Cart = () => {
                                     </ListItem>
                                 ))}
                             </List>
-                            <Typography variant="h6" sx={{ textAlign: 'right' }}>
+                            <Typography variant="h6" sx={{ textAlign: 'right' }} >
                                 Total Carrito: ${total.toFixed(2)}
                             </Typography>
                             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                                <Button variant="contained" color="primary" onClick={handleCheckout}>
+                                <Button variant="contained" color="error" onClick={handleCheckout}>
                                     Checkout
                                 </Button>
                             </div>
