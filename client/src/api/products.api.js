@@ -40,3 +40,7 @@ import axios from 'axios';
     export const login = (loginData) => {
         return axios.post (`${BASE_URL}auth/login`, loginData);
     };
+
+    export const register = (newUser) => {
+        return axios.post (`${BASE_URL}auth/register`, newUser);
+    };
